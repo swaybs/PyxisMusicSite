@@ -37,6 +37,8 @@ html, body {
   font-weight: 600;
   display: block;
   color: #1E1A1E;
+  text-shadow: 0px 7px 4px rgba(150, 150, 150, 1);
+  text-shadow: 5px 7px 4px rgba(150, 150, 150, 1);
 }
 
 
@@ -50,13 +52,17 @@ div a:hover,
 
 }
 
+div .producer {
+  text-align: right !important;
+}
+
 .test-button {
     position: fixed;
 }
 
 span {
   width: 100%;
-  background-color: red;
+  background-color: white;
   display: inline-block;
   height: 1em;
 }
