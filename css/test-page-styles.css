@@ -1,0 +1,52 @@
+$primary-color: color: #1E1A1E;
+
+html, body {
+  height: 100%;
+
+}
+
+.home-page {
+  background-color: #FAFFDF;
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  /* background-color: #565C6A; */
+}
+
+
+.random-text {
+  padding: 1.25em;
+  text-align: justify;
+  position: relative;
+  color: #C6E08C;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 2em;
+  margin: 0 auto;
+  width: 80%;
+  word-wrap: break-word;
+  letter-spacing: 10px;
+}
+
+.text, .pyxis {
+  /* clear: none; */
+  float: left;
+  font-weight: 600;
+  display: block;
+  color: #1E1A1E;
+}
+
+
+div a,
+div a:hover,
+.enter {
+  float: right;
+  text-align: right;
+  color: #1E1A1E !important;
+  text-decoration: none;
+}
+
+.test-button {
+    position: fixed;
+}
