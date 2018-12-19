@@ -3,8 +3,6 @@
 // BURGER ICON FUNCTION
 function burger(x) {
   x.classList.toggle('change');
-
-
 }
 
 // OPEN NAV
