@@ -8,7 +8,7 @@ function burger(x) {
 // OPEN NAV
 function openNav() {
   // alert("Not Working")
-  document.getElementsByClassName('overlay').style.height = "100%";
+  document.getElementByID('site-nav-primary').style.height = "100%";
 }
 
 //CLOSE NAV
