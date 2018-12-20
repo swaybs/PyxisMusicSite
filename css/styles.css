@@ -1,6 +1,4 @@
-
 /*  GENERAL STYLES  */
-
 html,
 body {
   height: 100%;
@@ -12,6 +10,7 @@ body {
 
 body {
   background-size: cover;
+  font-smoothing: grayscale;
   /* background: #1E1A1E; */
 }
 
@@ -27,10 +26,14 @@ body {
 
 .container {
   overflow: hidden;
+
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* min-height: 100vh; */
 }
 
 /*  HEADER STYLES  */
-
 .header {
   position: fixed;
   top: 0;
@@ -42,13 +45,11 @@ body {
   transition: transform .3s ease-out;
 }
 
-.header
-.primary-nav-wrap {
+.header .primary-nav-wrap {
   overflow: hidden;
 }
 
-.header
-.site-logo {
+.header .site-logo {
   font-size: 16px;
   margin: 0;
   float: left;
@@ -72,7 +73,6 @@ body {
 }
 
 /* CODE BACKGROUND */
-
 /* #code-bg-wrap {
   background-image: url('/img/tech.jpg');
   background-repeat: no-repeat;
@@ -87,12 +87,8 @@ body {
   left: 0;
   z-index: -1;
 } */
-
-
 /*  MENU ITEMS STYLE  */
-
-.header
-.primary-nav {
+.header .primary-nav {
   float: right;
   list-style: none;
   margin: 0;
@@ -100,26 +96,22 @@ body {
   text-align: center;
 }
 
-.header
-.primary-nav li:first-child {
+.header .primary-nav li:first-child {
   margin-left: 0;
 }
 
-.header
-.primary-nav li {
+.header .primary-nav li {
   display: inline;
   margin: 0 0 0 30px;
   top: 25%;
-  margin-top:35px;
+  margin-top: 35px;
 }
 
-.header
-.primary-nav li:last-child {
+.header .primary-nav li:last-child {
   margin-right: 0;
 }
 
 /* BURGER BAR NAV ICON */
-
 .burger {
   position: relative;
   float: right;
@@ -151,7 +143,6 @@ body {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
   background-color: #818181;
-
 }
 
 .overlay {
@@ -209,10 +200,8 @@ body {
   }
 }
 
-
 /* BARBA CONTENT AND STYLING */
-
-.barba-container {
+/* .barba-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -220,9 +209,8 @@ body {
   height: 100%;
   overflow-y: auto;
   z-index: 2;
-}
-
-.home-page {
+} */
+/* .home-page {
   width: 80%;
   max-width: 754px;
   height: 300px;
@@ -231,20 +219,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
-}
-
+} */
 /* ANIMATED WORDS/ICONS ON HOME PAGE */
-
 .animated-home {
-  width: 80%;
-  max-width: 754px;
+  width: 100%;
+  /* max-width: 754px; */
   height: 300px;
   position: absolute;
   z-index: 20;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .animated-home .part.active {
@@ -260,14 +245,12 @@ body {
   /* background-size: contain; */
   -webkit-transition: opacity .4s ease-out, transform .3s ease-out;
   transition: opacity .4s ease-out, transform .3s ease-out;
-
 }
 
 .animated-home .part.part-1 {
   width: 70%;
   left: 0;
   /* content: "Web Devloper"; */
-
 }
 
 .animated-home .part.part-2 {
@@ -276,7 +259,6 @@ body {
 }
 
 /* ABOUT & DESCRIPTION PART */
-
 .animated-home .about-part {
   /* position: absolute; */
   font-size: 3em;
@@ -286,12 +268,14 @@ body {
   text-align: center;
   top: 0;
   left: 0;
+  height: 100vh;
 }
 
 .animated-home .desc-part {
   /* position: absolute; */
   font-size: 1em;
   font-family: 'Noto Sans SC', sans-serif;
+  font-style: italic;
   /* color: white; */
   margin: 0 auto;
   text-align: center;
@@ -299,19 +283,65 @@ body {
   left: 0;
 }
 
-.fas {
-  /* color: white; */
+/* ABOUT SECTION STYLING */
+.about-sec {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  /* background-color: #677A65; */
+  overflow: hidden;
 }
 
+.about-sec-left .about-text-left {
+  position: absolute;
 
-.test-button {
-  margin: 0 auto;
-  text-align: center;
-
-}
-
-.btn {
+  /* display: flex; */
+  width: 40%;
+  /* margin: 65%; */
+  padding-top: 50px;
+  padding-left: 22%;
+  padding-right: 1.5%;
+  padding-bottom: 50px;
   font-family: 'Noto Sans SC', sans-serif;
-  font-size: 20px;
+  font-size: 1.5em;
+  background-color: #677A65;
+  float: right;
+  color: white;
+  text-align: right;
+}
 
+.about-text {
+  font-size: 3em !important;
+  font-family: 'Plaster', cursive;
+}
+
+.about-sec-right .about-text-right {
+  position: absolute;
+  width: 60%;
+  padding-top: 300px;
+  padding-left: 42%;
+  /* display: flex; */
+  float: right;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 1.5em;
+  color: #1E1A1E;
+  /* background-color: lightgray; */
+}
+
+.about-text-right .skill-text {
+  font-size: 3em !important;
+  font-family: 'Plaster', cursive;
+}
+
+.about-sec-right li {
+  /* float: left; */
+  /* position: absolute; */
+  text-decoration: none;
+  list-style-type: decimal;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: initial;
 }
