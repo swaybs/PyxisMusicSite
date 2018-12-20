@@ -8,10 +8,10 @@ function burger(x) {
 // OPEN NAV
 function openNav() {
   // alert("Not Working")
-  document.getElementByID('site-nav-primary').style.height = "100%";
+  document.getElementById('site-nav-primary').style.height = "100%";
 }
 
 //CLOSE NAV
 function closeNav() {
-  document.getElementByID("site-nav-primary").style.height = "0%";
+  document.getElementById("site-nav-primary").style.height = "0%";
 }
