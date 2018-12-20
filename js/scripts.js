@@ -5,15 +5,12 @@ function burger(x) {
   x.classList.toggle('change');
 }
 
-// OPEN NAV
-function openNav() {
-  // alert("Not Working")
-  // document.getElementById('burger').style.color = "white";
-  document.getElementById('site-nav-primary').style.height = "100%";
+function navToggle() {
+  var overlay = document.getElementById('site-nav-primary');
 
-}
-
-//CLOSE NAV
-function closeNav() {
-  // document.getElementById("site-nav-primary").style.height = "0%";
+  if (overlay.style.height === "100%") {
+    overlay.style.height = "0%";
+  } else {
+    overlay.style.height = "100%";
+  }
 }
