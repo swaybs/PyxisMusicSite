@@ -5,6 +5,7 @@
 // BURGER ICON FUNCTION
 function burger(x) {
   x.classList.toggle('change');
+
 }
 
 // Toggle function for burger button
