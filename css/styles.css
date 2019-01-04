@@ -178,8 +178,17 @@ body {
 }
 
 /* ANIMATED WORDS/ICONS ON HOME PAGE */
+@keyframes extendOut {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+
+}
 .name-home {
-  width: 100%;
+  /* width: 0%; */
   max-width: 754px;
   height: 300px;
   position: absolute;
@@ -188,6 +197,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: extendOut 10s;
+  animation-fill-mode: forwards;
+
+
 }
 
 /* ABOUT & DESCRIPTION PART */
