@@ -188,7 +188,7 @@ body {
 
 }
 .name-home {
-  /* width: 0%; */
+  width: 0%;
   max-width: 754px;
   height: 300px;
   position: absolute;
@@ -197,9 +197,16 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: extendOut 10s;
-  animation-fill-mode: forwards;
+  /* animation: extendOut 10s; */
+  /* animation-fill-mode: forwards; */
+  transition: width 5s;
+  text-shadow: 20px 20px 20px gray;
 
+
+}
+
+.name-home:hover {
+  width: 70%;
 
 }
 

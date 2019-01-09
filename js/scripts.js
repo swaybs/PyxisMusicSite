@@ -43,6 +43,12 @@ function fadeloop(el,timeout,timein,loop){
     return false;
 }
 
+window.onscroll = function() {scrollOut()};
+
+
+$(window).ready(function() {
+  $('.name-home', this).css('width', '70%');
+})
 // Loop from 0% width to 100% width
 
 // $('document').ready(function(){
