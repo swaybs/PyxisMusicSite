@@ -257,6 +257,7 @@ body {
 @media (max-width: 600px) {
   .name-home {
     font-size: 0.75em;
+    text-shadow: none;
   }
 }
 
